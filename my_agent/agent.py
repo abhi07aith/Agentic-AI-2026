@@ -1,0 +1,10 @@
+#from google.adk.tools import google_search
+from google.adk.agents.llm_agent import Agent
+
+root_agent = Agent(
+    model='gemini-2.5-pro',
+    name='root_agent',
+    description='A helpful assistant for user questions.',
+    instruction='Answer user questions to the best of your knowledge, do not answer anything related to cricket',
+    #tools=[google_search]
+)
